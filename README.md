@@ -13,7 +13,7 @@ API requests they need to go through an OAuth2 authorization flow.
 
 2. Create a file `.env` there and specify the confguration that is
    appropriate for the API that you want to authorize against. The entries in
-   this file must be in the form `KEY=VALUE`, e.g. `PORT=8080`.
+   this file must be shell compatible format of `KEY=VALUE`, e.g. `PORT=8080`.
 
    These are the supported vars:
 
