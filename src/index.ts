@@ -58,7 +58,7 @@ const env = {
     clientSecret: process.env.API_CLIENTSECRET || missing("API_CLIENTSECRET"),
     apiAuthUrl:   process.env.API_AUTHURL || missing("API_AUTHURL"),
     apiTokenUrl:  process.env.API_TOKENURL || missing("API_TOKENURL"),
-    scopes:       process.env.SCOPES || "openid",
+    scopes:       process.env.API_SCOPES || "openid",
 };
 
 run(express(), env);

@@ -25,7 +25,7 @@ API requests they need to go through an OAuth2 authorization flow.
    API_CLIENTSECRET      | xyz987654321                         |                  | Your application's client secret that you got from your API provider
    API_AUTHURL           | https://yourapi/oauth2/authorize     |                  | The OAuth2 URL of your API for getting the authorization code (OAuth2 step 1)
    API_TOKENURL          | https://yourapi/oauth2/token         |                  | The OAuth2 URL of your API for getting an Access token (OAuth2 step 2)
-   SCOPES                | id api email refresh_token           | openid           | A space separated list of scopes that your authorization flow shall request
+   API_SCOPES            | id api email refresh_token           | openid           | A space separated list of scopes that your authorization flow shall request
 
 3. Download dependencies if you haven't done so before:
    ```
