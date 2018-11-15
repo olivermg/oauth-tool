@@ -5,6 +5,7 @@
   "scripts": {
     "start": "yarn compile && set -a; source .env; set +a; node dist/index",
     "watch": "set -a; source .env; set +a; nodemon --watch 'src/**/*.ts' --exec 'ts-node' --no-cache src/index.ts",
+    "repl": "./node_modules/.bin/ts-node",
     "compile": "./node_modules/typescript/bin/tsc",
     "clean": "rm -rf ./dist"
   },
