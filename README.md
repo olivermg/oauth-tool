@@ -3,7 +3,7 @@
 This tool helps you to run through an OAuth2 authorization flow in order to
 retrieve an Access Token.
 
-It is thought to be a utility for developers that e.g. need to try out or
+It is thought to be a simple utility for developers that e.g. need to try out or
 debug an API and are facing the issue that before being able to make any
 API requests they need to go through an OAuth2 authorization flow.
 
