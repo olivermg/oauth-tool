@@ -47,13 +47,17 @@ async function run(app: Application, env) {
     app.listen(env.port, () => console.log(`Listening on port ${env.port}.`));
 }
 
+const missing = (varname) => {
+    throw `${varname} must be set in environment. For help, please refer to README.md.`;
+};
+
 const env = {
     baseUrl:      process.env.BASEURL || "http://localhost",
     port:         process.env.PORT || "8080",
-    clientId:     process.env.API_CLIENTID,
-    clientSecret: process.env.API_CLIENTSECRET,
-    apiAuthUrl:   process.env.API_AUTHURL,
-    apiTokenUrl:  process.env.API_TOKENURL,
+    clientId:     process.env.API_CLIENTID || missing("API_CLIENTID"),
+    clientSecret: process.env.API_CLIENTSECRET || missing("API_CLIENTSECRET"),
+    apiAuthUrl:   process.env.API_AUTHURL || missing("API_AUTHURL"),
+    apiTokenUrl:  process.env.API_TOKENURL || missing("API_TOKENURL"),
     scopes:       process.env.SCOPES || "openid",
 };
 
