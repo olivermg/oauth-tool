@@ -1,6 +1,6 @@
 # oauth-tool
 
-This tool helps you to run through an OAuth2 authorization flow in order to
+This tool helps you to run through an OAuth2 authorization code flow in order to
 retrieve an Access Token.
 
 It is thought to be a simple utility for developers that e.g. need to try out or
